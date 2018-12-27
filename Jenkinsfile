@@ -10,12 +10,12 @@ pipeline {
         }
         stage('Image pull') { 
             steps { 
-                sh 'docker pull ec2-54-173-108-195.compute-1.amazonaws.com:8083/nginx-server:3' 
+                sh 'docker pull ec2-54-173-108-195.compute-1.amazonaws.com:8083/nginx-server:latest' 
                }
         }
          stage('Docker Run') { 
             steps { 
-               sh 'docker run -itd -p 443 ec2-54-173-108-195.compute-1.amazonaws.com:8083/nginx-server:3'
+               sh 'docker run -itd -p 443 ec2-54-173-108-195.compute-1.amazonaws.com:8083/nginx-server:latest'
             }
         }
     }
