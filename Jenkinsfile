@@ -10,12 +10,12 @@ pipeline {
         }
         stage('Image pull') { 
             steps { 
-                sh 'docker pull ec2-54-173-108-195.compute-1.amazonaws.com:8083/redis-server:${BUILD_NUMBER}' 
+                sh 'docker pull ec2-54-173-108-195.compute-1.amazonaws.com:8083/redis-server:21' 
                }
         }
          stage('Docker Run') { 
             steps { 
-               sh 'docker run -itd --name redis -p 6379:6379 ec2-54-173-108-195.compute-1.amazonaws.com:8083/redis-server:${BUILD_NUMBER}'
+               sh 'docker run -itd --name redis -p 6379:6379 ec2-54-173-108-195.compute-1.amazonaws.com:8083/redis-server:21'
             }
         }
     }
