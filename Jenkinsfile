@@ -15,7 +15,7 @@ pipeline {
         }
          stage('Docker Run') { 
             steps { 
-               sh 'docker run -itd -p ec2-3-84-52-185.compute-1.amazonaws.com:8083/redis-server:latest'
+               sh 'docker run -itd -p 6379 ec2-3-84-52-185.compute-1.amazonaws.com:8083/redis-server:latest'
             }
         }
     }
