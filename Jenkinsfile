@@ -1,4 +1,4 @@
-*/CD pipeline--------/*
+/*CD pipeline--------*/
 #!/usr/bin/env groovy
 
 pipeline {
