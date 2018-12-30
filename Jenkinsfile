@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Image pull') { 
             steps { 
-                sh 'docker pull ec2-3-84-52-185.compute-1.amazonaws.com:8083/nginx-server:latest' 
+                sh 'docker pull ec2-3-84-52-185.compute-1.amazonaws.com:8083/nginx-server:latest'
                }
         }
          stage('Docker Run') { 
