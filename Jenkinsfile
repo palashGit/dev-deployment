@@ -1,5 +1,3 @@
-//Testing CD pipeline new change 
-//Testing CD1 pipeline new change 
 #!/usr/bin/env groovy
 
 pipeline {
