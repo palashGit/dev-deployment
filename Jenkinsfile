@@ -8,7 +8,7 @@ pipeline {
                 sh 'docker login ec2-3-85-25-223.compute-1.amazonaws.com:8083'
                }
         }
-        stage('Image pull') { 
+        stage('Docker Image pull') { 
             steps { 
                 sh 'docker pull ec2-3-85-25-223.compute-1.amazonaws.com:8083/redis-server:latest' 
                }
