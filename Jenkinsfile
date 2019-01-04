@@ -3,7 +3,7 @@
 pipeline {
     agent any  
     stages {
-         stage('Nexus Login') { 
+         stage('Login to Nexus ') { 
             steps { 
                 sh 'docker login ec2-3-85-25-223.compute-1.amazonaws.com:8083'
                }
